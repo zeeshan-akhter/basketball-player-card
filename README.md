@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Basketball Player Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project displays a basketball player's information in a card format using a React component. The card includes the player's name, image, position, and stats, with modern styling and animations.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Check out the live demo of the project [here](https://basketball-player-card.vercel.app/).
 
-### `npm start`
+## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot](./screenshot.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Display a basketball player's image, name, position, and stats.
+- Modern and appealing design with gradients and hover animations.
+- Responsive design that looks good on different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Follow these steps to set up and run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/zeeshan-akhter/basketball-player-card.git
+   cd basketball-player-card
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server**:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+The application will be running on `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `BasketballPlayerCard` component accepts the following props:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `name` (string): The player's name.
+- `image` (string): URL to the player's image.
+- `position` (string): The player's position.
+- `stats` (object): An object containing the player's stats (e.g., `{ pointsPerGame: 25.4, assistsPerGame: 7.1, reboundsPerGame: 10.5 }`).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Example usage:
+```jsx
+<BasketballPlayerCard
+  name="LeBron James"
+  image="https://example.com/lebron.jpg"
+  position="Forward"
+  stats={{ pointsPerGame: 25.4, assistsPerGame: 7.1, reboundsPerGame: 10.5 }}
+/>
+```
 
-## Learn More
+## File Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+basketball-player-card/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── BasketballPlayerCard.js
+│   │   ├── BasketballPlayerCard.css
+│   ├── App.js
+│   ├── App.css
+|   ├── index.css
+│   ├── index.js
+├── .gitignore
+├── package.json
+├── README.md
+├── screenshot.png
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
