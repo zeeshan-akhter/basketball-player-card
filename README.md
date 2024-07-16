@@ -4,7 +4,8 @@ This project displays a basketball player's information in a card format using a
 
 ## Demo
 
-Check out the live demo of the project [here](https://basketball-player-card.vercel.app/).
+Check out the live demo of the project [here](https://basketball-player-card-beta.vercel.app/).
+Check out the github repository [here](https://github.com/zeeshan-akhter/basketball-player-card).
 
 ## Screenshot
 
@@ -21,12 +22,14 @@ Check out the live demo of the project [here](https://basketball-player-card.ver
 Follow these steps to set up and run the project locally:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/zeeshan-akhter/basketball-player-card.git
    cd basketball-player-card
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
@@ -48,6 +51,7 @@ The `BasketballPlayerCard` component accepts the following props:
 - `stats` (object): An object containing the player's stats (e.g., `{ pointsPerGame: 25.4, assistsPerGame: 7.1, reboundsPerGame: 10.5 }`).
 
 Example usage:
+
 ```jsx
 <BasketballPlayerCard
   name="LeBron James"
@@ -75,4 +79,3 @@ basketball-player-card/
 ├── README.md
 ├── screenshot.png
 ```
-
